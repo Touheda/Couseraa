@@ -1,0 +1,75 @@
+DROP DATABASE IF EXISTS idb;
+CREATE DATABASE idb;
+
+USE idb;
+
+CREATE TABLE batch(
+id INT AUTO_INCREMENT PRIMARY KEY,
+round VARCHAR(50)
+);
+INSERT INTO batch(round)
+VALUES
+('35'),
+('36'),
+('37'),
+('38'),
+('39'),
+('40');
+
+CREATE TABLE student(
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50),
+course VARCHAR(50),
+round VARCHAR(50)
+);
+INSERT INTO student(name, course, round)
+VALUES
+('kobir-1','WDPF','35'),
+('kobir-2','DDD','35'),
+('kobir-3','ESAD','35'),
+('kobir-4','NT','35'),
+('kobir-5','J2EE','35'),
+('kobir-6','GAVE','35'),
+('kobir-1','WDPF','36'),
+('kobir-2','DDD','36'),
+('kobir-3','ESAD','36'),
+('kobir-4','NT','36'),
+('kobir-5','J2EE','36'),
+('kobir-6','GAVE','36'),
+('kobir-1','WDPF','37'),
+('kobir-2','DDD','37'),
+('kobir-3','ESAD','37'),
+('kobir-4','NT','37'),
+('kobir-5','J2EE','37'),
+('kobir-6','GAVE','37'),
+('kobir-1','WDPF','38'),
+('kobir-2','DDD','38'),
+('kobir-3','ESAD','38'),
+('kobir-4','NT','38'),
+('kobir-5','J2EE','38'),
+('kobir-6','GAVE','38'),
+('kobir-1','WDPF','39'),
+('kobir-2','DDD','39'),
+('kobir-3','ESAD','39'),
+('kobir-4','NT','39'),
+('kobir-5','J2EE','39'),
+('kobir-6','GAVE','39'),
+('kobir-1','WDPF','40'),
+('kobir-2','DDD','40'),
+('kobir-3','ESAD','40'),
+('kobir-4','NT','40'),
+('kobir-5','J2EE','40'),
+('kobir-6','GAVE','40');
+
+CREATE TABLE users(
+id INT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(50),
+password VARCHAR(50),
+email VARCHAR(50)
+);
+INSERT INTO users(username, password, email)
+VALUES
+('kobir1','123456','kobir1@gmail.com'),
+('kobir2','123456','kobir2@gmail.com'),
+('kobir3','123456','kobir3@gmail.com'),
+('kobir4','123456','kobir4@gmail.com');
